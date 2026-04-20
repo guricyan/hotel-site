@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const rooms = [
   {
     id: "yotsuru",
-    name: "野鶴居",
+    name: "野鶴",
     desc: "海边1分钟｜安静私密",
     price: "¥1000 / 晚",
     guests: "最多5人",
@@ -17,7 +17,7 @@ const rooms = [
   },
   {
     id: "yousui",
-    name: "悠水居",
+    name: "悠水",
     desc: "64年古民家｜田园慢生活",
     price: "¥900 / 晚",
     guests: "最多4人",
@@ -43,7 +43,7 @@ const rooms = [
   },
   {
     id: "zhoumo",
-    name: "周墨斎",
+    name: "闲云",
     desc: "海边小屋｜静谧放松",
     price: "¥1000 / 晚",
     guests: "最多5人",
@@ -96,7 +96,7 @@ function HeroSection() {
         transition={{ duration: 1 }}
       >
         <p className="eyebrow">SeaField Retreat</p>
-        <h1>海野居</h1>
+        <h1>品牌名</h1>
         <p className="hero-text">在海与田野之间，找到属于你的安静时光</p>
         <a href="#rooms" className="primary-button">查看居所</a>
       </motion.div>
