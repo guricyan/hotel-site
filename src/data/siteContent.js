@@ -76,7 +76,7 @@ export const homeContent = {
         },
       },
     ],
-    temporaryImageNote: "以上为临时授权图片，已进行裁切与网页压缩；摄影师补拍完成后，将替换为安处原创照片。",
+    temporaryImageNote: " ",
   },
   slowMoments: [
     "清晨沿海边散步",
