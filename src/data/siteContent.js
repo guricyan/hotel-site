@@ -1,0 +1,333 @@
+// 绝大多数文字、联系方式和图片路径都集中在这个文件里。
+// 修改这里，提交到 GitHub 后，Cloudflare Pages 会自动更新网站。
+
+export const siteConfig = {
+  brandName: "海野居",
+  brandEnglish: "HAINOJU STAY",
+  tagline: "在海与田野之间，慢慢住进冲绳的日常",
+  contact: {
+    // 请替换成真实邮箱与微信号。
+    email: "replace-with-your-email@example.com",
+    wechat: "请替换为微信号",
+    phone: "",
+  },
+  directBooking: {
+    title: "再次来到冲绳，从这里开始",
+    text: "官网直订面向回访客人与经朋友介绍的客人。省去平台服务费后，我们会把其中一部分变成更合适的价格与更灵活的沟通。",
+    benefits: ["官网专属价格", "直接确认入住细节", "行程变更沟通更灵活"],
+  },
+};
+
+export const homeContent = {
+  heroImages: [
+    "/images/home/hero-01.svg",
+    "/images/home/hero-02.svg",
+    "/images/home/hero-03.svg",
+  ],
+  introduction: {
+    eyebrow: "OKINAWA SOUTHERN LIFE",
+    title: "在冲绳的南方，时间有另一种走法",
+    paragraphs: [
+      "从那霸一路向南，城市的声音渐渐退去。海风穿过住宅街与田野，渔港、红瓦屋顶和缓慢的日常，构成了系满与丰见城真实的生活风景。",
+      "海野居想保留的，不只是一个可以过夜的房间，而是一段能让人慢下来的时间。你可以去海边散步，也可以什么都不做，只在屋里等一束光缓缓移动。",
+    ],
+    image: "/images/home/story.svg",
+  },
+  locality: {
+    eyebrow: "ITOMAN & SOUTH OKINAWA",
+    title: "依海而生的地方",
+    text: "系满的日常与海紧密相连。清晨的渔港、傍晚的海岸、村落里的风和不急不慢的生活节奏，让这里与热闹的观光中心保持着恰到好处的距离。住在这里，更像是暂时成为了当地生活的一部分。",
+    cards: [
+      { title: "海岸", text: "步行或短途驾车即可抵达南部海岸，在清晨与黄昏感受不同的光。", image: "/images/home/coast.svg" },
+      { title: "村落", text: "穿过安静的住宅街与乡野小路，遇见冲绳南部未经修饰的日常。", image: "/images/home/village.svg" },
+      { title: "食与市场", text: "从渔港和市场带回新鲜食材，在民宿的厨房里慢慢做一顿饭。", image: "/images/home/market.svg" },
+    ],
+  },
+  slowMoments: [
+    "清晨沿海边散步",
+    "午后在榻榻米上晒太阳",
+    "去市场挑选当日食材",
+    "傍晚等待海面变成橘色",
+    "夜晚关掉灯，看看星空",
+  ],
+};
+
+const southAttractions = [
+  {
+    category: "交通与购物",
+    items: [
+      { name: "那霸机场", detail: "约 14 公里｜驾车约 28 分钟" },
+      { name: "冲绳奥特莱斯购物城 Ashibinaa", detail: "约 8.7 公里｜驾车约 16 分钟" },
+      { name: "iias 冲绳丰崎", detail: "约 8.7 公里｜驾车约 16 分钟" },
+      { name: "濑长岛 Umikaji Terrace", detail: "约 11 公里｜驾车约 23 分钟" },
+    ],
+  },
+  {
+    category: "文化与饮食",
+    items: [
+      { name: "道之驿糸满与鱼市场", detail: "约 7.2 公里｜驾车约 14 分钟" },
+      { name: "琉球玻璃村", detail: "约 3.1 公里｜驾车约 5 分钟" },
+      { name: "DMM Kariyushi 水族馆", detail: "约 9.2 公里｜驾车约 16 分钟" },
+      { name: "奥武岛", detail: "约 16 公里｜驾车约 27 分钟" },
+    ],
+  },
+  {
+    category: "自然与人文",
+    items: [
+      { name: "喜屋武岬", detail: "约 2.2 公里｜驾车约 6 分钟" },
+      { name: "具志川城迹", detail: "约 1.3 公里｜驾车约 3 分钟" },
+      { name: "平和祈念公园", detail: "约 7.4 公里｜驾车约 13 分钟" },
+      { name: "冲绳世界・玉泉洞", detail: "约 14 公里｜驾车约 23 分钟" },
+      { name: "Gangala 之谷", detail: "约 14 公里｜驾车约 23 分钟，建议提前预约" },
+      { name: "斋场御岳与知念岬", detail: "约 24 公里｜驾车约 38 分钟" },
+    ],
+  },
+];
+
+const coastAttractions = [
+  {
+    category: "交通与购物",
+    items: [
+      { name: "那霸机场", detail: "约 10 公里｜驾车约 20–25 分钟" },
+      { name: "冲绳奥特莱斯购物城 Ashibinaa", detail: "约 5.2 公里｜驾车约 10 分钟" },
+      { name: "iias 冲绳丰崎", detail: "约 5.4 公里｜驾车约 11 分钟" },
+      { name: "濑长岛 Umikaji Terrace", detail: "约 8.1 公里｜驾车约 15 分钟" },
+    ],
+  },
+  {
+    category: "文化与饮食",
+    items: [
+      { name: "道之驿糸满与鱼市场", detail: "约 2.8 公里｜驾车约 6 分钟" },
+      { name: "琉球玻璃村", detail: "约 3.6 公里｜驾车约 7 分钟" },
+      { name: "DMM Kariyushi 水族馆", detail: "约 5.2 公里｜驾车约 11 分钟" },
+      { name: "奥武岛", detail: "约 15 公里｜驾车约 27 分钟" },
+    ],
+  },
+  {
+    category: "自然与人文",
+    items: [
+      { name: "喜屋武岬", detail: "约 6.1 公里｜驾车约 14 分钟" },
+      { name: "具志川城迹", detail: "约 5.7 公里｜驾车约 12 分钟" },
+      { name: "平和祈念公园", detail: "约 8.5 公里｜驾车约 15 分钟" },
+      { name: "冲绳世界・玉泉洞", detail: "约 11 公里｜驾车约 24 分钟" },
+      { name: "Gangala 之谷", detail: "约 11 公里｜驾车约 24 分钟，建议提前预约" },
+      { name: "斋场御岳与知念岬", detail: "约 23 公里｜驾车约 38 分钟" },
+    ],
+  },
+];
+
+export const rooms = [
+  {
+    id: "yousui",
+    name: "悠水居",
+    romanized: "YOUSUI",
+    location: "糸满市喜屋武",
+    summary: "六十五年的时光，仍在这里缓慢流淌。",
+    cardText: "传统古民家、原木与榻榻米，适合安静住上几天。",
+    maxGuests: 5,
+    bedrooms: "1 间独立卧室＋和室",
+    bathrooms: "独立卫浴",
+    propertyType: "传统古民家",
+    heroImages: [
+      "/images/rooms/yousui/hero.svg",
+      "/images/rooms/yousui/01.svg",
+      "/images/rooms/yousui/02.svg",
+    ],
+    cardImage: "/images/rooms/yousui/card.svg",
+    intro: [
+      "悠水居是一座拥有约六十五年历史的冲绳传统古民家。红瓦屋顶、守护家宅的石敢当、木质廊檐与榻榻米，共同保留了老房子原本的温度。",
+      "这里没有刻意营造的复古。阳光穿过木窗，风从庭院进入屋内，夜晚只剩虫鸣与星光——那是延续至今的冲绳生活。",
+    ],
+    highlights: [
+      { title: "一栋老屋的时间", text: "传统格局被完整保留下来，同时补足现代旅居所需的舒适设施。" },
+      { title: "像当地人一样做饭", text: "厨房配有冰箱、微波炉、电饭煲、餐具与清洁用品，可以从附近市场带回食材。" },
+      { title: "田园里的小惊喜", text: "院内设有小菜园，并准备两辆自行车，适合沿乡间小路缓慢探索。" },
+      { title: "夜晚属于天空", text: "远离市区灯光，天气晴朗时，可以在院子里仰望星空。" },
+    ],
+    facilities: ["高速 Wi‑Fi", "空调", "厨房", "冰箱", "微波炉", "电饭煲", "基础餐具", "洗衣机", "烘干机", "吸尘器", "免费停车", "2 辆自行车"],
+    suitableFor: "适合喜欢古民家、乡间宁静与慢节奏的情侣、小家庭和长期旅居者。",
+    attractions: southAttractions,
+    access: {
+      intro: "建议租车前往。完成预订后，我们会发送准确地址、停车位置与图文入住路线。",
+      steps: ["从那霸机场出发，沿冲绳南部方向行驶", "进入喜屋武村落后按入住指南前往", "车辆可停放在民宿指定停车位"],
+      mapImage: "/images/rooms/yousui/map.svg",
+    },
+  },
+  {
+    id: "danxia",
+    name: "丹霞",
+    romanized: "DANXIA",
+    location: "糸满市喜屋武",
+    summary: "把同行的热闹，安放在安静的田野与海风之间。",
+    cardText: "现代双层独栋，四间卧室，适合家庭与朋友同行。",
+    maxGuests: 8,
+    bedrooms: "4 间独立卧室",
+    bathrooms: "1 间浴室＋2 间卫生间",
+    propertyType: "现代双层独栋",
+    heroImages: [
+      "/images/rooms/danxia/hero.svg",
+      "/images/rooms/danxia/01.svg",
+      "/images/rooms/danxia/02.svg",
+    ],
+    cardImage: "/images/rooms/danxia/card.svg",
+    intro: [
+      "丹霞坐落于喜屋武安静的村落之中。沿途是田野与低矮的房屋，步行约十五至二十分钟可抵达海边。",
+      "一层留给相聚，二层留给休息。宽敞而清晰的空间，让多人同行既能一起吃饭聊天，也能各自拥有安静的夜晚。",
+    ],
+    highlights: [
+      { title: "上下分层，动静分明", text: "一层为客餐厅与公共空间，二层设四间独立卧室，适合多人出行。" },
+      { title: "一起做一顿晚餐", text: "完整厨房与大餐桌，适合从市场带回食材，共同准备旅途中的一餐。" },
+      { title: "走去海边", text: "从村落缓慢步行至海岸，沿途能感受到南部乡野的安静。" },
+      { title: "同住，也保留距离", text: "充足卧室与双卫生间配置，让家庭和朋友同行更从容。" },
+    ],
+    facilities: ["高速 Wi‑Fi", "空调", "4 间卧室", "厨房", "冰箱", "微波炉", "电饭煲", "基础餐具", "洗衣机", "烘干机", "吸尘器", "电视", "免费停车"],
+    suitableFor: "适合大家庭、朋友结伴、小型团队与希望共享公共空间的多人旅行。",
+    attractions: southAttractions,
+    access: {
+      intro: "建议租车前往。预订确认后会发送准确地址、停车方式及最后一段村落道路的图文说明。",
+      steps: ["从那霸机场向糸满南部方向行驶", "进入喜屋武村落后按照入住指南转入住宅道路", "抵达独栋建筑前的指定停车区域"],
+      mapImage: "/images/rooms/danxia/map.svg",
+    },
+  },
+  {
+    id: "yotsuru",
+    name: "野鹤居",
+    romanized: "YOTSURU",
+    location: "糸满市潮崎町",
+    summary: "出门两分钟，就是海岸与每天都不同的落日。",
+    cardText: "临近南滨公园的一层独栋，海边与生活便利兼得。",
+    maxGuests: 8,
+    bedrooms: "3 间独立卧室＋和室",
+    bathrooms: "独立卫浴",
+    propertyType: "现代一层独栋",
+    heroImages: [
+      "/images/rooms/yotsuru/hero.svg",
+      "/images/rooms/yotsuru/01.svg",
+      "/images/rooms/yotsuru/02.svg",
+    ],
+    cardImage: "/images/rooms/yotsuru/card.svg",
+    intro: [
+      "野鹤居位于潮崎町安静整洁的住宅区，步行约两分钟即可抵达南滨公园与海边。这里不偏远，也没有闹市的嘈杂。",
+      "白天去海边散步，傍晚等待落日，回到屋里一起吃饭。海岸日常与生活便利，在这里自然地连在一起。",
+    ],
+    highlights: [
+      { title: "没有楼梯的一层空间", text: "三间独立卧室、宽敞客厅与榻榻米和室，对老人和儿童更友好。" },
+      { title: "海边的三个时刻", text: "白天踏浪、傍晚看日落、夜晚吹海风，每个时段都有不同的风景。" },
+      { title: "从市场回到厨房", text: "糸满渔港与市场距离不远，完整厨房适合料理当天买到的海鲜。" },
+      { title: "住进当地人的街区", text: "周边有公园、餐厅、超市与棒球场，可以感受真实的本地生活。" },
+    ],
+    facilities: ["高速 Wi‑Fi", "空调", "3 间卧室", "榻榻米和室", "厨房", "冰箱", "微波炉", "电饭煲", "基础餐具", "洗衣机", "烘干机", "电视", "免费停车"],
+    suitableFor: "适合亲子家庭、多人同行、远程办公及偏爱海边与生活便利的旅人。",
+    attractions: coastAttractions,
+    access: {
+      intro: "从那霸机场驾车约二十至二十五分钟。预订后会发送准确门牌、停车位与从主路进入住宅区的路线图。",
+      steps: ["从机场向丰崎、糸满方向行驶", "抵达潮崎町后转入南滨公园附近住宅区", "按图文指引停入民宿专用车位"],
+      mapImage: "/images/rooms/yotsuru/map.svg",
+    },
+  },
+  {
+    id: "xianyun",
+    name: "闲云斋",
+    romanized: "XIANYUN",
+    location: "糸满市潮崎町",
+    summary: "楼下相聚，楼上安睡；海风就在街角。",
+    cardText: "双层海边独栋，公共空间与睡眠空间彼此独立。",
+    maxGuests: 6,
+    bedrooms: "2 间独立卧室",
+    bathrooms: "2 间浴室＋2 间卫生间",
+    propertyType: "现代双层独栋",
+    heroImages: [
+      "/images/rooms/xianyun/hero.svg",
+      "/images/rooms/xianyun/01.svg",
+      "/images/rooms/xianyun/02.svg",
+    ],
+    cardImage: "/images/rooms/xianyun/card.svg",
+    intro: [
+      "闲云斋同样位于潮崎町，步行约两分钟可抵达海边。双层结构让公共生活与安静休息自然分开。",
+      "楼下适合一起聊天、做饭与吃饭，楼上则留给沉稳的睡眠。推门是住宅街的日常，再走几步便是海风。",
+    ],
+    highlights: [
+      { title: "楼下相聚，楼上安睡", text: "上下分层的布局，让同行者共享时间，也各自拥有安静空间。" },
+      { title: "双卫浴的从容", text: "一、二层均配置卫浴，多人入住时不必长时间等候。" },
+      { title: "沿海的一天", text: "白日散步、黄昏看落日，夜晚回到安静住宅区休息。" },
+      { title: "短住与长住都自然", text: "厨房、洗烘设备与完整生活用品，让旅居更接近日常。" },
+    ],
+    facilities: ["高速 Wi‑Fi", "空调", "2 间卧室", "2 间浴室", "2 间卫生间", "厨房", "冰箱", "微波炉", "电饭煲", "基础餐具", "洗烘设备", "吸尘器", "免费停车"],
+    suitableFor: "适合重视空间层次与私密感的家庭、情侣和朋友同行。",
+    attractions: coastAttractions,
+    access: {
+      intro: "从那霸机场驾车约二十至二十五分钟。确认预订后会收到准确地址、停车位与入住路线。",
+      steps: ["从机场向丰崎、糸满方向行驶", "进入潮崎町南滨公园附近住宅区", "按照入住指南抵达并使用专用停车位"],
+      mapImage: "/images/rooms/xianyun/map.svg",
+    },
+  },
+  {
+    id: "tianshan",
+    name: "田山居",
+    romanized: "TIANSHAN",
+    location: "丰见城市住宅区",
+    summary: "把匆忙的旅行，过成几天安稳的本地生活。",
+    cardText: "靠近机场与丰崎生活圈，安静住宅区内的宽敞独栋。",
+    maxGuests: 8,
+    bedrooms: "3 间独立卧室＋和室",
+    bathrooms: "2 间卫生间",
+    propertyType: "双层独栋",
+    heroImages: [
+      "/images/rooms/tianshan/hero.svg",
+      "/images/rooms/tianshan/01.svg",
+      "/images/rooms/tianshan/02.svg",
+    ],
+    cardImage: "/images/rooms/tianshan/card.svg",
+    intro: [
+      "田山居藏在丰见城安静的住宅街区里。这里没有景区的人潮，更接近冲绳居民每天生活的样子。",
+      "超市、餐厅、机场与丰崎区域都在短途车程之内。白天出发探索，晚上回到安静的房子里，让旅途重新落回日常。",
+    ],
+    highlights: [
+      { title: "宽敞而灵活", text: "三间独立卧室、开阔客厅与日式和室，适合不同人数与同行方式。" },
+      { title: "住宅区里的好睡眠", text: "远离热门景点的拥挤与夜间喧闹，回到更平稳的休息节奏。" },
+      { title: "靠近机场与丰崎", text: "前往机场、濑长岛、奥特莱斯及水族馆均为短途车程。" },
+      { title: "把旅行过成日常", text: "完整厨房与生活设备，适合家庭、多日行程与希望自己料理的客人。" },
+    ],
+    facilities: ["高速 Wi‑Fi", "空调", "3 间卧室", "日式和室", "厨房", "冰箱", "微波炉", "电饭煲", "基础餐具", "洗衣机", "吸尘器", "2 间卫生间", "免费停车"],
+    suitableFor: "适合家庭、多人同行、在意机场交通与本地生活便利的旅人。",
+    attractions: [
+      {
+        category: "交通与购物",
+        items: [
+          { name: "那霸机场", detail: "约 6.5 公里｜驾车约 17–25 分钟" },
+          { name: "冲绳奥特莱斯购物城 Ashibinaa", detail: "约 4.6 公里｜驾车约 10 分钟" },
+          { name: "iias 冲绳丰崎", detail: "约 5.2 公里｜驾车约 12 分钟" },
+          { name: "濑长岛 Umikaji Terrace", detail: "约 5.1 公里｜驾车约 15 分钟" },
+          { name: "那霸国际通", detail: "约 7.3 公里｜驾车约 20 分钟" },
+        ],
+      },
+      {
+        category: "文化与饮食",
+        items: [
+          { name: "道之驿糸满与鱼市场", detail: "约 6.9 公里｜驾车约 15 分钟" },
+          { name: "DMM Kariyushi 水族馆", detail: "约 5.2 公里｜驾车约 12 分钟" },
+          { name: "波上宫", detail: "约 6.6 公里｜驾车约 15–20 分钟" },
+          { name: "首里城公园", detail: "约 8.5 公里｜驾车约 22 分钟" },
+          { name: "奥武岛", detail: "约 14 公里｜驾车约 25 分钟" },
+        ],
+      },
+      {
+        category: "自然与人文",
+        items: [
+          { name: "冲绳世界・玉泉洞", detail: "约 9.7 公里｜驾车约 21 分钟" },
+          { name: "Gangala 之谷", detail: "约 10 公里｜驾车约 20 分钟，建议提前预约" },
+          { name: "知念岬公园", detail: "约 20 公里｜驾车约 31 分钟" },
+        ],
+      },
+    ],
+    access: {
+      intro: "从那霸机场与丰崎区域前往便利。预订确认后会发送准确地址、停车位置与住宅区内最后一段路线。",
+      steps: ["从那霸机场向丰见城方向行驶", "进入民宿所在住宅街区", "按照入住指南使用指定停车位"],
+      mapImage: "/images/rooms/tianshan/map.svg",
+    },
+  },
+];
+
+export function getRoomById(roomId) {
+  return rooms.find((room) => room.id === roomId);
+}

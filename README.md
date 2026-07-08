@@ -1,6 +1,6 @@
-# 海野居官网项目
+# 海野居官网 v2
 
-这是一个可直接部署到 GitHub + Vercel 的 Vite + React 项目。
+这是一个可直接部署到 Cloudflare Pages / Vercel 的 Vite + React 项目。
 
 ## 本地运行
 
@@ -9,15 +9,27 @@ npm install
 npm run dev
 ```
 
-## 部署到 Vercel
+## 生产构建
 
-1. 把整个项目上传到 GitHub 仓库
-2. 在 Vercel 中导入该仓库
-3. 保持默认配置部署即可
+```bash
+npm run build
+```
 
-## 后续你最需要替换的内容
+构建目录为 `dist`。
 
-- `src/App.jsx` 里的示例图片链接
-- 联系方式（邮箱 / 微信）
-- 每个房源的价格、入住人数、设备、周边信息
-- 路线图区块替换成 Google Map 或图片路线图
+## Cloudflare Pages 设置
+
+- Framework preset：Vite
+- Build command：`npm run build`
+- Build output directory：`dist`
+
+`public/_redirects` 已包含 SPA 路由配置，因此详情页刷新不会 404。
+
+## 最常修改的文件
+
+- 所有文案、房源资料、联系方式、图片路径：`src/data/siteContent.js`
+- 全站视觉：`src/styles.css`
+- 首页布局：`src/pages/HomePage.jsx`
+- 房源详情页布局：`src/pages/RoomPage.jsx`
+
+详细说明见《网站内容修改说明.md》。
