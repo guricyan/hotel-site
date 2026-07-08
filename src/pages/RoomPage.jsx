@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import BookingPanel from "../components/BookingPanel";
 import HeroCarousel from "../components/HeroCarousel";
+import PhotoGallery from "../components/PhotoGallery";
 import SectionHeading from "../components/SectionHeading";
 import { getRoomById, siteConfig } from "../data/siteContent";
 import NotFoundPage from "./NotFoundPage";
@@ -62,6 +63,15 @@ export default function RoomPage() {
             </motion.article>
           ))}
         </div>
+      </section>
+
+      <section className="section room-gallery-section">
+        <SectionHeading
+          eyebrow="PHOTO GALLERY"
+          title="居所照片"
+          text="点击照片可以查看大图。专业摄影补拍完成后，我们会继续替换与补充。"
+        />
+        <PhotoGallery images={room.galleryImages} roomName={room.name} />
       </section>
 
       <section className="section facilities-section">

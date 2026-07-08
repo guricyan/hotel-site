@@ -1,0 +1,10 @@
+1. Extract this ZIP.
+2. Copy the src folder and public folder into your local hotel-site repository.
+3. Choose Replace files when Windows asks.
+4. Open GitHub Desktop.
+5. Enter a summary such as: Add property photos and gallery.
+6. Click Commit to main, then Push origin.
+7. Cloudflare Pages will rebuild automatically.
+
+This update adds real photos for all five properties, a photo gallery, and full-screen image viewing.
+Exact-address close-up photos were intentionally excluded.
