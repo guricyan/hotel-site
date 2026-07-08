@@ -1,6 +1,14 @@
-# 海野居官网 v2
+# 安处 ANCHU 官网 v3
 
 这是一个可直接部署到 Cloudflare Pages / Vercel 的 Vite + React 项目。
+
+## 品牌信息
+
+- 中文名：安处
+- 英文名：ANCHU
+- 中文标语：我心安处，即是家。
+- 日文标语：心安らぐ場所、そこがわが家。
+- 英文标语：Where the heart finds peace, there is home.
 
 ## 本地运行
 
@@ -32,4 +40,4 @@ npm run build
 - 首页布局：`src/pages/HomePage.jsx`
 - 房源详情页布局：`src/pages/RoomPage.jsx`
 
-详细说明见《网站内容修改说明.md》。
+详细说明见`CONTENT_EDITING_GUIDE.md`和`V3_UPDATE_NOTES.md`。

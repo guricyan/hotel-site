@@ -1,6 +1,6 @@
 import { siteConfig } from "../data/siteContent";
 
-export default function BookingPanel({ roomName = "海野居" }) {
+export default function BookingPanel({ roomName = "安处" }) {
   const emailReady = !siteConfig.contact.email.startsWith("replace-");
   const subject = encodeURIComponent(`${roomName} 官网预订咨询`);
   const body = encodeURIComponent(`您好，我想咨询 ${roomName} 的入住情况。\n\n入住日期：\n退房日期：\n入住人数：\n姓名：\n其他需求：`);

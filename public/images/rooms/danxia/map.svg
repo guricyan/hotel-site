@@ -3,6 +3,6 @@
 <path d="M100 150 C350 290 500 220 740 390 S1120 620 1500 800" fill="none" stroke="#ffffff" stroke-width="18" opacity=".45"/>
 <circle cx="1110" cy="500" r="34" fill="#b55c49"/><circle cx="1110" cy="500" r="12" fill="#fff"/>
 <circle cx="330" cy="655" r="22" fill="#5d7467" opacity=".9"/>
-<circle cx="760" cy="410" r="18" fill="#5d7467" opacity=".9"/><text x="110" y="790" fill="#2d2a25" font-size="76" font-family="serif" letter-spacing="10">丹霞</text>
+<circle cx="760" cy="410" r="18" fill="#5d7467" opacity=".9"/><text x="110" y="790" fill="#2d2a25" font-size="76" font-family="serif" letter-spacing="10">丹霞阁</text>
 <text x="115" y="860" fill="#2d2a25" opacity=".78" font-size="28" font-family="sans-serif" letter-spacing="5">ACCESS MAP</text>
 <text x="115" y="930" fill="#2d2a25" opacity=".52" font-size="20" font-family="sans-serif">请替换为真实照片 / Replace with your photo</text></svg>

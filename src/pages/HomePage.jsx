@@ -18,24 +18,34 @@ export default function HomePage() {
         >
           <p className="hero-kicker">OKINAWA · ITOMAN · TOMIGUSUKU</p>
           <h1>{siteConfig.brandName}</h1>
-          <p>{siteConfig.tagline}</p>
+          <p className="hero-brand-english">{siteConfig.brandEnglish}</p>
+          <p className="hero-tagline-cn">{siteConfig.taglineChinese}</p>
+          <div className="hero-tagline-translations">
+            <span lang="ja">{siteConfig.taglineJapanese}</span>
+            <span lang="en">{siteConfig.taglineEnglish}</span>
+          </div>
           <a className="button light" href="#stays">查看所有居所</a>
         </motion.div>
       </HeroCarousel>
 
-      <section className="section story-split">
+      <section className="section story-split brand-story-section" id="story">
         <div className="story-copy">
           <SectionHeading
-            eyebrow={homeContent.introduction.eyebrow}
-            title={homeContent.introduction.title}
+            eyebrow={homeContent.brandStory.eyebrow}
+            title={homeContent.brandStory.title}
             align="left"
           />
-          {homeContent.introduction.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+          {homeContent.brandStory.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+          <div className="brand-motto-block">
+            <strong>{siteConfig.taglineChinese}</strong>
+            <span lang="ja">{siteConfig.taglineJapanese}</span>
+            <span lang="en">{siteConfig.taglineEnglish}</span>
+          </div>
         </div>
         <motion.img
           className="story-image"
-          src={homeContent.introduction.image}
-          alt="冲绳南部生活风景"
+          src={homeContent.brandStory.image}
+          alt="安处品牌故事占位图片"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -90,9 +100,9 @@ export default function HomePage() {
 
       <section className="section" id="stays">
         <SectionHeading
-          eyebrow="OUR STAYS"
-          title="五处居所，五种冲绳日常"
-          text="从临海住宅区到喜屋武村落，从传统古民家到宽敞现代独栋，每一处都有自己的节奏。"
+          eyebrow="ANCHU STAYS"
+          title="五处居所，五种安心的日常"
+          text="从临海住宅区到喜屋武村落，从传统古民家到宽敞现代独栋，每一处都有自己的节奏，也都属于安处。"
         />
         <div className="rooms-grid">
           {rooms.map((room, index) => <RoomCard key={room.id} room={room} index={index} />)}
@@ -104,8 +114,8 @@ export default function HomePage() {
       </section>
 
       <section className="section final-note">
-        <p className="eyebrow">COME BACK TO OKINAWA</p>
-        <h2>第一次因旅途而来，下一次像回到熟悉的住处。</h2>
+        <p className="eyebrow">COME BACK TO ANCHU</p>
+        <h2>第一次因旅途而来，下一次，回到让你心安的地方。</h2>
         <Link className="text-link large" to="/#stays">选择你的居所 <span>→</span></Link>
       </section>
     </>

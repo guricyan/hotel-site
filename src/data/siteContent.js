@@ -2,18 +2,21 @@
 // 修改这里，提交到 GitHub 后，Cloudflare Pages 会自动更新网站。
 
 export const siteConfig = {
-  brandName: "海野居",
-  brandEnglish: "HAINOJU STAY",
-  tagline: "在海与田野之间，慢慢住进冲绳的日常",
+  brandName: "安处",
+  brandEnglish: "ANCHU",
+  tagline: "我心安处，即是家。",
+  taglineChinese: "我心安处，即是家。",
+  taglineJapanese: "心安らぐ場所、そこがわが家。",
+  taglineEnglish: "Where the heart finds peace, there is home.",
   contact: {
     // 请替换成真实邮箱与微信号。
-    email: "replace-with-your-email@example.com",
-    wechat: "请替换为微信号",
+    email: "jyokokan.lucky@gmali.com",
+    wechat: "moyan1912",
     phone: "",
   },
   directBooking: {
-    title: "再次来到冲绳，从这里开始",
-    text: "官网直订面向回访客人与经朋友介绍的客人。省去平台服务费后，我们会把其中一部分变成更合适的价格与更灵活的沟通。",
+    title: "再次回到安处，从这里开始",
+    text: "官网直订主要面向回访客人与经朋友介绍的客人。省去平台服务费后，我们会把其中一部分变成更合适的价格，也让入住细节与行程变化可以直接沟通。",
     benefits: ["官网专属价格", "直接确认入住细节", "行程变更沟通更灵活"],
   },
 };
@@ -24,12 +27,13 @@ export const homeContent = {
     "/images/home/hero-02.svg",
     "/images/home/hero-03.svg",
   ],
-  introduction: {
-    eyebrow: "OKINAWA SOUTHERN LIFE",
-    title: "在冲绳的南方，时间有另一种走法",
+  brandStory: {
+    eyebrow: "THE MEANING OF ANCHU",
+    title: "心有所安，旅途便有了归处",
     paragraphs: [
-      "从那霸一路向南，城市的声音渐渐退去。海风穿过住宅街与田野，渔港、红瓦屋顶和缓慢的日常，构成了系满与丰见城真实的生活风景。",
-      "海野居想保留的，不只是一个可以过夜的房间，而是一段能让人慢下来的时间。你可以去海边散步，也可以什么都不做，只在屋里等一束光缓缓移动。",
+      "安处，取自‘我心安处，即是家’。我们相信，家不只存在于熟悉的城市，也会出现在一段旅途里——当人终于放慢脚步，卸下疲惫，感到自在与安心。",
+      "我们想做的，不只是提供一间可以过夜的房子，而是在冲绳南部，为旅人保留一处能够安静生活几天的地方。海风、田野、老屋、住宅街与每天不同的光，共同组成安处的日常。",
+      "每一栋居所都有自己的性格，但都遵循同一个愿望：让远道而来的客人，在陌生的地方也能感到被好好安放。",
     ],
     image: "/images/home/story.svg",
   },
@@ -155,7 +159,7 @@ export const rooms = [
   },
   {
     id: "danxia",
-    name: "丹霞",
+    name: "丹霞阁",
     romanized: "DANXIA",
     location: "糸满市喜屋武",
     summary: "把同行的热闹，安放在安静的田野与海风之间。",
@@ -171,7 +175,7 @@ export const rooms = [
     ],
     cardImage: "/images/rooms/danxia/card.svg",
     intro: [
-      "丹霞坐落于喜屋武安静的村落之中。沿途是田野与低矮的房屋，步行约十五至二十分钟可抵达海边。",
+      "丹霞阁坐落于喜屋武安静的村落之中。沿途是田野与低矮的房屋，步行约十五至二十分钟可抵达海边。",
       "一层留给相聚，二层留给休息。宽敞而清晰的空间，让多人同行既能一起吃饭聊天，也能各自拥有安静的夜晚。",
     ],
     highlights: [

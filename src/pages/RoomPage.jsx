@@ -1,14 +1,22 @@
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import BookingPanel from "../components/BookingPanel";
 import HeroCarousel from "../components/HeroCarousel";
 import SectionHeading from "../components/SectionHeading";
-import { getRoomById } from "../data/siteContent";
+import { getRoomById, siteConfig } from "../data/siteContent";
 import NotFoundPage from "./NotFoundPage";
 
 export default function RoomPage() {
   const { roomId } = useParams();
   const room = getRoomById(roomId);
+
+  useEffect(() => {
+    if (!room) return undefined;
+    const previousTitle = document.title;
+    document.title = `${room.name}｜${siteConfig.brandName} ${siteConfig.brandEnglish}`;
+    return () => { document.title = previousTitle; };
+  }, [room]);
 
   if (!room) return <NotFoundPage />;
 
@@ -17,7 +25,7 @@ export default function RoomPage() {
       <HeroCarousel images={room.heroImages} compact>
         <div className="room-hero-copy">
           <Link to="/" className="back-home">← 返回首页</Link>
-          <p>{room.romanized} · {room.location}</p>
+          <p>{siteConfig.brandEnglish} · {room.romanized} · {room.location}</p>
           <h1>{room.name}</h1>
           <strong>{room.summary}</strong>
         </div>

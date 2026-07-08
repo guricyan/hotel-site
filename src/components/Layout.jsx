@@ -22,7 +22,7 @@ export default function Layout() {
   return (
     <div className="site-shell">
       <header className={`site-header ${scrolled ? "is-scrolled" : ""}`}>
-        <Link className="brand" to="/" aria-label="返回首页">
+        <Link className="brand" to="/" aria-label="返回安处首页">
           <strong>{siteConfig.brandName}</strong>
           <span>{siteConfig.brandEnglish}</span>
         </Link>
@@ -37,10 +37,10 @@ export default function Layout() {
           <span />
         </button>
         <nav className={open ? "site-nav is-open" : "site-nav"}>
-          <Link to="/">首页</Link>
-          <Link to="/#stays">居所</Link>
-          <Link to="/#itoman">冲绳南部</Link>
-          <Link to="/#booking">官网预订</Link>
+          <Link to="/">安处</Link>
+          <a href="/#stays">居所</a>
+          <a href="/#itoman">冲绳南部</a>
+          <a href="/#booking">官网预订</a>
         </nav>
       </header>
       <main>
@@ -49,7 +49,10 @@ export default function Layout() {
       <footer className="site-footer">
         <div>
           <strong>{siteConfig.brandName}</strong>
-          <p>{siteConfig.tagline}</p>
+          <span className="footer-brand-english">{siteConfig.brandEnglish}</span>
+          <p>{siteConfig.taglineChinese}</p>
+          <p className="footer-tagline-ja">{siteConfig.taglineJapanese}</p>
+          <p className="footer-tagline-en">{siteConfig.taglineEnglish}</p>
         </div>
         <div className="footer-contact">
           <span>{siteConfig.contact.email}</span>

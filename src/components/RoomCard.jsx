@@ -17,7 +17,7 @@ export default function RoomCard({ room, index }) {
         </div>
         <div className="room-card-content">
           <div>
-            <p className="room-romanized">{room.romanized}</p>
+            <p className="room-romanized">ANCHU · {room.romanized}</p>
             <h3>{room.name}</h3>
           </div>
           <p>{room.cardText}</p>
