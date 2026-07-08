@@ -72,10 +72,18 @@ export default function HomePage() {
               <div>
                 <h3>{card.title}</h3>
                 <p>{card.text}</p>
+                {card.credit && (
+                  <p className="image-credit">
+                    Photo: <a href={card.credit.sourceUrl} target="_blank" rel="noreferrer">{card.credit.author}</a>
+                    <span aria-hidden="true"> · </span>
+                    <a href={card.credit.licenseUrl} target="_blank" rel="noreferrer">{card.credit.license}</a>
+                  </p>
+                )}
               </div>
             </motion.article>
           ))}
         </div>
+        <p className="locality-note">{homeContent.locality.temporaryImageNote}</p>
       </section>
 
       <section className="slow-section">

@@ -101,12 +101,32 @@ export default function RoomPage() {
       <section className="section access-section">
         <div className="access-copy">
           <SectionHeading eyebrow="ACCESS" title="如何抵达" text={room.access.intro} align="left" />
+          <div className="address-card">
+            <span>民宿地址</span>
+            <strong>{room.access.address}</strong>
+          </div>
           <ol>
             {room.access.steps.map((step) => <li key={step}>{step}</li>)}
           </ol>
-          <p className="privacy-note">为保护住客与邻里隐私，准确门牌与详细入住路线会在预订确认后发送。</p>
+          <a
+            className="button primary map-button"
+            href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(room.access.address)}`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            打开 Google 地图导航
+          </a>
+          <p className="privacy-note">地图公开显示民宿位置；门锁密码、自助入住步骤与停车细节仅在预订确认后发送。</p>
         </div>
-        <img className="route-image" src={room.access.mapImage} alt={`${room.name}路线图占位图`} />
+        <div className="map-embed-wrap">
+          <iframe
+            title={`${room.name}地图`}
+            src={`https://www.google.com/maps?q=${encodeURIComponent(room.access.address)}&output=embed`}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
+          />
+        </div>
       </section>
 
       <section className="section room-booking">

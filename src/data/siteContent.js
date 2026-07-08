@@ -9,14 +9,14 @@ export const siteConfig = {
   taglineJapanese: "心安らぐ場所、そこがわが家。",
   taglineEnglish: "Where the heart finds peace, there is home.",
   contact: {
-    // 请替换成真实邮箱与微信号。
-    email: "jyokokan.lucky@gmali.com",
+    // 官网联系邮箱与微信号。
+    email: "jyokokan.lucky@gmail.com",
     wechat: "moyan1912",
     phone: "",
   },
   directBooking: {
-    title: "再次回到安处，从这里开始",
-    text: "官网直订主要面向回访客人与经朋友介绍的客人。省去平台服务费后，我们会把其中一部分变成更合适的价格，也让入住细节与行程变化可以直接沟通。",
+    title: "官网直订专享",
+    text: "曾经入住过安处的客人，或通过官方网站预订的客人，可享专属住宿价格。具体房价与空房情况，请通过预订咨询确认。",
     benefits: ["官网专属价格", "直接确认入住细节", "行程变更沟通更灵活"],
   },
 };
@@ -42,10 +42,41 @@ export const homeContent = {
     title: "依海而生的地方",
     text: "系满的日常与海紧密相连。清晨的渔港、傍晚的海岸、村落里的风和不急不慢的生活节奏，让这里与热闹的观光中心保持着恰到好处的距离。住在这里，更像是暂时成为了当地生活的一部分。",
     cards: [
-      { title: "海岸", text: "步行或短途驾车即可抵达南部海岸，在清晨与黄昏感受不同的光。", image: "/images/home/coast.svg" },
-      { title: "村落", text: "穿过安静的住宅街与乡野小路，遇见冲绳南部未经修饰的日常。", image: "/images/home/village.svg" },
-      { title: "食与市场", text: "从渔港和市场带回新鲜食材，在民宿的厨房里慢慢做一顿饭。", image: "/images/home/market.svg" },
+      {
+        title: "海岸",
+        text: "步行或短途驾车即可抵达南部海岸，在清晨与黄昏感受不同的光。",
+        image: "/images/home/coast.webp",
+        credit: {
+          author: "Fumihiko Ueno",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Kyan,_Itoman,_Okinawa_Prefecture_901-0354,_Japan_-_panoramio.jpg",
+          license: "CC BY 3.0",
+          licenseUrl: "https://creativecommons.org/licenses/by/3.0/",
+        },
+      },
+      {
+        title: "村落",
+        text: "穿过安静的住宅街与乡野小路，遇见冲绳南部未经修饰的日常。",
+        image: "/images/home/village.webp",
+        credit: {
+          author: "Kugel~commonswiki",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Entrance_of_Arasaki_Coast.JPG",
+          license: "CC BY-SA 4.0",
+          licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
+        },
+      },
+      {
+        title: "食与市场",
+        text: "从渔港和市场带回新鲜食材，在民宿的厨房里慢慢做一顿饭。",
+        image: "/images/home/food-market.webp",
+        credit: {
+          author: "Banzai Hiroaki",
+          sourceUrl: "https://commons.wikimedia.org/wiki/File:Goya_Champuru.jpg",
+          license: "CC BY 2.0",
+          licenseUrl: "https://creativecommons.org/licenses/by/2.0/",
+        },
+      },
     ],
+    temporaryImageNote: "以上为临时授权图片，已进行裁切与网页压缩；摄影师补拍完成后，将替换为安处原创照片。",
   },
   slowMoments: [
     "清晨沿海边散步",
@@ -173,8 +204,9 @@ export const rooms = [
     suitableFor: "适合喜欢古民家、乡间宁静与慢节奏的情侣、小家庭和长期旅居者。",
     attractions: southAttractions,
     access: {
-      intro: "建议租车前往。完成预订后，我们会发送准确地址、停车位置与图文入住路线。",
-      steps: ["从那霸机场出发，沿冲绳南部方向行驶", "进入喜屋武村落后按入住指南前往", "车辆可停放在民宿指定停车位"],
+      address: "〒901-0354 沖縄県糸満市喜屋武335",
+      intro: "建议租车前往，可直接使用下方地图导航至民宿。自助入住方式、门锁与停车细节会在预订确认后发送。",
+      steps: ["从那霸机场出发，沿冲绳南部方向行驶", "进入喜屋武村落后按地图前往", "车辆请停放在民宿指定停车位"],
       mapImage: "/images/rooms/yousui/map.svg",
     },
   },
@@ -228,8 +260,9 @@ export const rooms = [
     suitableFor: "适合大家庭、朋友结伴、小型团队与希望共享公共空间的多人旅行。",
     attractions: southAttractions,
     access: {
-      intro: "建议租车前往。预订确认后会发送准确地址、停车方式及最后一段村落道路的图文说明。",
-      steps: ["从那霸机场向糸满南部方向行驶", "进入喜屋武村落后按照入住指南转入住宅道路", "抵达独栋建筑前的指定停车区域"],
+      address: "〒901-0354 沖縄県糸満市喜屋武332-4",
+      intro: "建议租车前往，可直接使用下方地图导航至民宿。自助入住方式、门锁与停车细节会在预订确认后发送。",
+      steps: ["从那霸机场向糸满南部方向行驶", "进入喜屋武村落后按地图转入住宅道路", "抵达独栋建筑前的指定停车区域"],
       mapImage: "/images/rooms/danxia/map.svg",
     },
   },
@@ -281,8 +314,9 @@ export const rooms = [
     suitableFor: "适合亲子家庭、多人同行、远程办公及偏爱海边与生活便利的旅人。",
     attractions: coastAttractions,
     access: {
-      intro: "从那霸机场驾车约二十至二十五分钟。预订后会发送准确门牌、停车位与从主路进入住宅区的路线图。",
-      steps: ["从机场向丰崎、糸满方向行驶", "抵达潮崎町后转入南滨公园附近住宅区", "按图文指引停入民宿专用车位"],
+      address: "〒901-0364 沖縄県糸満市潮崎町3-20-6",
+      intro: "从那霸机场驾车约二十至二十五分钟，可直接使用下方地图导航。自助入住方式、门锁与停车细节会在预订确认后发送。",
+      steps: ["从机场向丰崎、糸满方向行驶", "抵达潮崎町后转入南滨公园附近住宅区", "车辆请停入民宿专用车位"],
       mapImage: "/images/rooms/yotsuru/map.svg",
     },
   },
@@ -335,8 +369,9 @@ export const rooms = [
     suitableFor: "适合重视空间层次与私密感的家庭、情侣和朋友同行。",
     attractions: coastAttractions,
     access: {
-      intro: "从那霸机场驾车约二十至二十五分钟。确认预订后会收到准确地址、停车位与入住路线。",
-      steps: ["从机场向丰崎、糸满方向行驶", "进入潮崎町南滨公园附近住宅区", "按照入住指南抵达并使用专用停车位"],
+      address: "〒901-0364 沖縄県糸満市潮崎町3-19-5",
+      intro: "从那霸机场驾车约二十至二十五分钟，可直接使用下方地图导航。自助入住方式、门锁与停车细节会在预订确认后发送。",
+      steps: ["从机场向丰崎、糸满方向行驶", "进入潮崎町南滨公园附近住宅区", "车辆请停入民宿专用车位"],
       mapImage: "/images/rooms/xianyun/map.svg",
     },
   },
@@ -419,8 +454,9 @@ export const rooms = [
       },
     ],
     access: {
-      intro: "从那霸机场与丰崎区域前往便利。预订确认后会发送准确地址、停车位置与住宅区内最后一段路线。",
-      steps: ["从那霸机场向丰见城方向行驶", "进入民宿所在住宅街区", "按照入住指南使用指定停车位"],
+      address: "〒901-0243 沖縄県豊見城市上田499-2",
+      intro: "从那霸机场与丰崎区域前往便利，可直接使用下方地图导航。自助入住方式、门锁与停车细节会在预订确认后发送。",
+      steps: ["从那霸机场向丰见城方向行驶", "进入上田住宅街区后按地图前往", "车辆请停放在民宿指定停车位"],
       mapImage: "/images/rooms/tianshan/map.svg",
     },
   },
